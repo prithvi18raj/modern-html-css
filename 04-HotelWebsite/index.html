@@ -12,9 +12,9 @@
 <body>
     <header>
         <nav id="navbar" class="bg-light">
-            <div id="navbar-container" class="container">
-                <span class="logo"><a href="index.html">Blooming</a></span>
-                <ul>
+            <div id="navbar-container" class="container d-flex justify-content-between">
+                <span class="logo d-flex align-items-center"><a href="index.html">Blooming</a></span>
+                <ul class="d-flex align-items-center">
                     <li><a class="current" href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -23,8 +23,8 @@
         </nav>
 
         <div id="showcase">
-            <div id="showcase-container" class="container">
-                <div class="showcase-content text-light">
+            <div id="showcase-container" class="container d-flex justify-content-center align-items-center text-center">
+                <div class="showcase-content d-flex flex-column align-items-center text-light">
                     <h1>Blooming Hotel</h1>
                     <p class="lead">Promising an inviting and comfortable stay for all</p>
                     <a class="btn btn-light" href="about.html">About Us</a>
@@ -33,18 +33,60 @@
         </div>
     </header>
 
-    <section id="home-info">
+    <section id="home-info" class="d-flex">
         <img src="img/lounge.jpg" alt="" id="info-img">
-        <div id="info-content" class="bg-light text-dark">
+        <div id="info-content" class="d-flex flex-column justify-content-center align-items-center bg-light text-dark">
             <span class="text-uppercase">Welcome to Blooming Hotel</span>
             <h2 class="text-primary">Comfort and Luxury</h2>
-            
-            <p>Blooming Hotel carries pride in ensuring guests are pampered with sumptuous luxury, warm hospitality and pure serenity. Our resort comprises stunning private beaches, four pools, a golf course, five restaurants and a cinema to offer exciting experiences.</p>
+            <p class="text-center">Blooming Hotel carries pride in ensuring guests are pampered with sumptuous luxury, warm hospitality and pure serenity. Our resort comprises stunning private beaches, four pools, a golf course, five restaurants and a cinema to offer exciting experiences.</p>
             <a class="btn btn-primary" href="about.html">Read More</a>
         </div>
     </section>
 
-    <section id="features">
+    <section id="features" class="d-flex flex-column text-dark">
+        <div id="box-1" class="box d-flex justify-content-center">
+            <div class="container feature-container d-flex flex-column justify-content-center align-items-center text-center">
+                <h2>Rooms & Suites</h2>
+                <p>The rooms and suites are located across six buildings while sixteen villas stand within their own gardens. All accommodation options sleep two and are available with kingsize or twin beds.</p>
+                <ul class="feature-list d-flex justify-content-center">
+                    <li>Superior</li>
+                    <li>Ocean</li>
+                    <li>Deluxe</li>
+                    <li>Deluxe E-Club</li>
+                    <li>Executive Suite</li>
+                    <li>Ambassador Suite</li>
+                    <li>Villas</li>
+                </ul>
+            </div>
+        </div>
+        <div id="box-2" class="box d-flex justify-content-center">
+            <div class="container feature-container d-flex flex-column justify-content-center align-items-center text-center">
+                <h2>Restaurants</h2>
+                <p>The hotel’s restaurants, lounges and cafés offer a wealth of choice and a depth of flavour to create a rich culinary scene, and all use halal ingredients.</p>
+                <ul class="feature-list d-flex justify-content-center">
+                    <li>Atrium Caf&eacute;</li>
+                    <li>Pantai</li>
+                    <li>Spaghettini</li>
+                    <li>Zen</li>
+                    <li>Zest</li>
+                </ul>
+            </div>
+        </div>
+        <div id="box-3" class="box d-flex justify-content-center">
+            <div class="container feature-container d-flex flex-column justify-content-center align-items-center text-center">
+                <h2>Sports & Leisure</h2>
+                <p>From the relaxation of a massage to an invigorating workout, from a round of golf to a screening at the cinema, spend your precious time in your favourite way.</p>
+                <ul class="feature-list d-flex justify-content-center">
+                    <li>Beaches</li>
+                    <li>Cinema</li>
+                    <li>Fitness Center</li>
+                    <li>Golf Course</li>
+                    <li>Kayaking</li>
+                    <li>Spa</li>
+                    <li>Swimming Pools</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <footer id="main-footer" class="bg-light text-dark">
