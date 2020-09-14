@@ -13,20 +13,25 @@
 body {
     font-family: 'Syne', sans-serif;
     line-height: 1.7;
+    background: var(--light-color);
+    color: var(--dark-color);
 }
 
 /* Utilities */
 .container {
     max-width: 68.75rem;
     margin: auto;
-    padding: 0 0.5rem;
+    padding: 0 2rem;
 }
 
-.d-flex {display: flex;}
-.flex-column {flex-direction: column;}
-.justify-content-center {justify-content: center;}
-.justify-content-between {justify-content: space-between;}
-.align-items-center {align-items: center;}
+.flex {display: flex;}
+.flex-col {flex-direction: column;}
+.justify-center {justify-content: center;}
+.justify-between {justify-content: space-between;}
+.align-center {align-items: center;}
+.align-end {align-items: flex-end;}
+
+.absolute {position: absolute;}
 
 .bg-primary {background: var(--primary-color);}
 .bg-light {background: var(--light-color);}
@@ -45,8 +50,14 @@ body {
 
 .btn {
     border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 2rem 0;
     padding: 0.5rem 1rem;
-    margin: 2rem;
+    font-family: inherit;
+    font-size: 1.2rem;
+    line-height: inherit;
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -58,7 +69,7 @@ body {
 }
 
 .btn-light {
-    background: #f6f6f6dd;
+    background: #f6f6f6ee;
 }
 
 .btn-light:hover {
@@ -67,12 +78,17 @@ body {
 }
 
 /* Main styling */
-h2 {
-    font-size: 2.5rem;
-    margin: 1rem;
+h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
 }
 
-p {
+h2 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+p, label {
     font-size: 1.2rem;
 }
 
@@ -88,6 +104,7 @@ a {
 /* Navbar */
 #navbar {
     overflow: auto;
+    width: 100%;
 }
 
 #navbar .logo {
@@ -96,16 +113,17 @@ a {
 }
 
 #navbar ul {
-    padding: 1rem 0;
+    padding: 2rem 0;
+    font-weight: bold;
 }
 
-#navbar a {
+#navbar .nav-link {
     display: block;
     margin: 0 1rem;
 }
 
-#navbar a:hover, 
-#navbar .current {
+#navbar a:hover {
+/* #navbar .current { */
     color: var(--primary-color);
 }
 
@@ -113,6 +131,7 @@ a {
     border-bottom: 1.5px solid var(--primary-color);
 }
 
+/* HOME */
 /* Showcase */
 #showcase {
     background: url(../img/lobby.jpg) no-repeat center center/cover;
@@ -125,6 +144,7 @@ a {
 
 .showcase-content h1 {
     font-size: 4rem;
+    margin: 0;
 }
 
 /* Home Info */
@@ -133,30 +153,67 @@ a {
 }
 
 #home-info img {
-    height: auto;
     max-width: 50%;
     object-fit: cover;
     object-position: center;
 }
 
-#info-content {
+#home-content {
     padding: 0 4rem;
 }
 
-/* Features */
-#features .box {
+/* Testimonials */
+#testimonials {
+    height: 100vh;
+    background: url(../img/lounge.jpg) no-repeat center center/cover;
+}
+
+#testimonials .testimonial {
+    margin: 1.5rem 0;
+    padding: 1.8rem;
+    border-radius: 5px;
+    background: #f6f6f6ee;
+}
+
+#testimonials img {
+    width: 8rem;
+    border-radius: 50%;
+}
+
+#testimonials p {
+    margin-left: 2rem;
+}
+
+/* ABOUT */
+/* About Info */
+#about-info {
     height: 100vh;
 }
 
-#features #box-1 {
+#about-info #about-content {
+    padding-right: 2rem;
+    align-items: flex-start;
+}
+
+#about-info img{
+    max-width: 40%;
+    border-radius: 50%;
+}
+
+/* Features */
+#features .feature-box {
+    height: 100vh;
+}
+
+#features #feature-1 {
     background: url(../img/room.jpg) no-repeat center center/cover;
 }
 
-#features #box-2 {
+#features #feature-2 {
     background: url(../img/food.jpg) no-repeat center center/cover;
 }
 
-#features #box-3 {
+#features #feature-3 {
     background: url(../img/pool.jpg) no-repeat center bottom/cover;
 }
 
@@ -174,12 +231,52 @@ a {
 
 #features li {
     margin: 0 2rem;
+    font-weight: bold;
+}
+
+/* CONTACT */
+/* Contact Form */
+#contact-form form {
+    margin: 1.2rem 0;
+}
+
+#contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+#contact-form .form-group:nth-child(4) {
+    margin: 0;
+}
+
+#contact-form input,
+#contact-form textarea {
+    border: 1px solid #b6b6b6;
+    border-radius: 5px;
+    margin-top: 0.2rem;
+    padding: 0.6rem;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline-color: var(--primary-color);
+}
+
+/* Contact Info */
+#contact-info-container {
+    height: 40vh;
+}
+
+#contact-info .contact-box {
+    width: 33.33%;
+}
+
+#contact-info p {
+    margin-top: 1rem;
 }
 
 /* Footer */
 #main-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 8vh;
 }
