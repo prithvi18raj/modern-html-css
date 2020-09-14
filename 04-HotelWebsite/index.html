@@ -11,20 +11,20 @@
 </head>
 <body>
     <header>
-        <nav id="navbar" class="bg-light">
-            <div id="navbar-container" class="container d-flex justify-content-between">
-                <span class="logo d-flex align-items-center"><a href="index.html">Blooming</a></span>
-                <ul class="d-flex align-items-center">
-                    <li><a class="current" href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+        <nav id="navbar" class="absolute">
+            <div class="container flex justify-between">
+                <span class="logo flex align-center"><a class="text-light" href="index.html">Blooming</a></span>
+                <ul class="flex align-center">
+                    <li><a class="nav-link text-light current" href="index.html">Home</a></li>
+                    <li><a class="nav-link text-light" href="about.html">About</a></li>
+                    <li><a class="nav-link text-light" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
 
         <div id="showcase">
-            <div id="showcase-container" class="container d-flex justify-content-center align-items-center text-center">
-                <div class="showcase-content d-flex flex-column align-items-center text-light">
+            <div id="showcase-container" class="container flex justify-center align-center text-center">
+                <div class="showcase-content flex flex-col align-center text-light">
                     <h1>Blooming Hotel</h1>
                     <p class="lead">Promising an inviting and comfortable stay for all</p>
                     <a class="btn btn-light" href="about.html">About Us</a>
@@ -33,9 +33,9 @@
         </div>
     </header>
 
-    <section id="home-info" class="d-flex">
-        <img src="img/lounge.jpg" alt="" id="info-img">
-        <div id="info-content" class="d-flex flex-column justify-content-center align-items-center bg-light text-dark">
+    <section id="home-info" class="flex">
+        <img src="img/restaurant.jpg" alt="hotel restaurant">
+        <div id="home-content" class="flex flex-col justify-center align-center">
             <span class="text-uppercase">Welcome to Blooming Hotel</span>
             <h2 class="text-primary">Comfort and Luxury</h2>
             <p class="text-center">Blooming Hotel carries pride in ensuring guests are pampered with sumptuous luxury, warm hospitality and pure serenity. Our resort comprises stunning private beaches, four pools, a golf course, five restaurants and a cinema to offer exciting experiences.</p>
@@ -43,53 +43,21 @@
         </div>
     </section>
 
-    <section id="features" class="d-flex flex-column text-dark">
-        <div id="box-1" class="box d-flex justify-content-center">
-            <div class="container feature-container d-flex flex-column justify-content-center align-items-center text-center">
-                <h2>Rooms & Suites</h2>
-                <p>The rooms and suites are located across six buildings while sixteen villas stand within their own gardens. All accommodation options sleep two and are available with kingsize or twin beds.</p>
-                <ul class="feature-list d-flex justify-content-center">
-                    <li>Superior</li>
-                    <li>Ocean</li>
-                    <li>Deluxe</li>
-                    <li>Deluxe E-Club</li>
-                    <li>Executive Suite</li>
-                    <li>Ambassador Suite</li>
-                    <li>Villas</li>
-                </ul>
+    <section id="testimonials" class="flex">
+        <div class="container">
+            <h2 class="text-light">Guests' Reviews</h2>
+            <div class="testimonial flex align-center">
+                <img src="img/female.jpg" alt="female reviewer">
+                <p><q cite="https://www.tripadvisor.com/ShowUserReviews-g469399-d302006-r751481209-The_Empire_Brunei-Kampong_Jerudong_Brunei_Muara_District.html?m=19905">This hotel was extravagant in every way. GOLD everywhere! The rooms have high ceilings and are super ornate. We stayed there on two separate occasions and still look for ward to going back. There is so much to do on the property and every meal we had was amazing. Also the spa, another level, before a massage you have a huge jacuzzi and lavish bathroom all to your self. The prices are great, every reason to stay here.</q></p>
             </div>
-        </div>
-        <div id="box-2" class="box d-flex justify-content-center">
-            <div class="container feature-container d-flex flex-column justify-content-center align-items-center text-center">
-                <h2>Restaurants</h2>
-                <p>The hotel’s restaurants, lounges and cafés offer a wealth of choice and a depth of flavour to create a rich culinary scene, and all use halal ingredients.</p>
-                <ul class="feature-list d-flex justify-content-center">
-                    <li>Atrium Caf&eacute;</li>
-                    <li>Pantai</li>
-                    <li>Spaghettini</li>
-                    <li>Zen</li>
-                    <li>Zest</li>
-                </ul>
-            </div>
-        </div>
-        <div id="box-3" class="box d-flex justify-content-center">
-            <div class="container feature-container d-flex flex-column justify-content-center align-items-center text-center">
-                <h2>Sports & Leisure</h2>
-                <p>From the relaxation of a massage to an invigorating workout, from a round of golf to a screening at the cinema, spend your precious time in your favourite way.</p>
-                <ul class="feature-list d-flex justify-content-center">
-                    <li>Beaches</li>
-                    <li>Cinema</li>
-                    <li>Fitness Center</li>
-                    <li>Golf Course</li>
-                    <li>Kayaking</li>
-                    <li>Spa</li>
-                    <li>Swimming Pools</li>
-                </ul>
+            <div class="testimonial flex align-center">
+                <img src="img/male.jpg" alt="male reviewer">
+                <p><q cite="https://www.tripadvisor.com/ShowUserReviews-g469399-d302006-r735759358-The_Empire_Brunei-Kampong_Jerudong_Brunei_Muara_District.html?m=19905">This is by far the best hotel I have stayed in so far. Generous rooms, restaurant spread, cinema, country Club, swimming pool. The view of the ocean is incredible. Beautiful scenery. And very warm reception and polite staff.</q></p>
             </div>
         </div>
     </section>
 
-    <footer id="main-footer" class="bg-light text-dark">
+    <footer id="main-footer" class="flex justify-center align-center bg-primary">
         <span>Copyright &copy; 2020 All Rights Reserved &middot; <a href="index.html">Blooming Hotel</a></span>
     </footer>
 </body>
