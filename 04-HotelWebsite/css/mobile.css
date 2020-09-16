@@ -1,0 +1,116 @@
+.lead {
+    font-size: 1.3rem;
+}
+
+.btn {
+    margin: 1.2rem 0;
+}
+
+h1, h2 {
+    line-height: 1.2;
+}
+
+/* Navbar */
+#navbar div {
+    flex-direction: column;
+    align-items: center;
+}
+
+#navbar ul {
+    margin: 0.5rem;
+}
+
+/* HOME */
+/* Showcase */
+#showcase h1 {
+    font-size: 3rem;
+}
+
+/* Home Info */
+#home-info img {
+    display: none;
+}
+
+/* Testimonials */
+#testimonials {
+    height: 100%;
+    padding: 2rem 0;
+}
+
+#testimonials h2 {
+    text-align: center;
+}
+
+#testimonials .testimonial {
+    flex-direction: column;
+}
+
+#testimonials p {
+    margin: 1rem 0 0;
+}
+
+/* ABOUT */
+/* About Info */
+#about-info {
+    height: 100%;
+    padding-bottom: 2rem;
+}
+#about-info :first-child {
+    flex-direction: column-reverse;
+}
+
+#about-info #about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+#about-info img {
+    max-width: 70%;
+    margin: 0 auto 1rem;
+}
+
+/* Features */
+#features ul {
+    flex-direction: column;
+    margin: 1rem;
+}
+
+/* CONTACT */
+/* Contact Form */
+#contact-form h1, p {
+    text-align: center;
+}
+
+#contact-form .form-group:last-child {
+    margin: 0;
+}
+
+/* Contact Info */
+#contact-info {
+    padding-bottom: 1rem;
+}
+
+#contact-info-container {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 2rem;
+}
+
+#contact-info .contact-box {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#contact-info span {
+    display: none;
+}
+
+#contact-info p {
+    text-align: left;
+    margin-left: 1rem;
+    width: 15rem;
+}
