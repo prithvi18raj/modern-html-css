@@ -156,6 +156,7 @@ img {
 .team img {
     border-radius: 5px;
     border-bottom: 5px solid var(--primary-color);
+    margin-bottom: 1rem;
 }
 
 /* Contact */
