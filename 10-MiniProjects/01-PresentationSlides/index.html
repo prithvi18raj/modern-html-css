@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>The Great Houses | Game of Thrones</title>
+</head>
+<body>
+    <!-- Page 1: Intro -->
+    <section id="page-1" class="page">
+        <h1>Game of Thrones</h1>
+        <span>The Great Houses</span>
+        <p>The Great Houses are the most powerful of the noble houses of the Seven Kingdoms. They exercise immense authority and power over their vassals and territories and are answerable only to the King of the Andals and the First Men, with the exception of House Stark, which rules over an independent kingdom.</p>
+        <div>
+            <a href="#page-2" class="btn">
+                <i class="fas fa-chevron-down fa-2x"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Page 2 -->
+    <section id="page-2" class="page">
+        <h2>House Stark</h2>
+        <span><q>Winter Is Coming</q></span>
+        <p>Rulers of the North from the castle of Winterfell and the royal house of the independent Kingdom of the North. Retook their lands from House Bolton, who usurped House Stark at the Red Wedding, after the Battle of the Bastards. The house is ruled by Sansa Stark, the Queen in the North. The heir is Princess Arya Stark.</p>
+        <div>
+            <a href="#page-1" class="btn btn-light">
+                <i class="fas fa-chevron-up fa-2x"></i>
+            </a>
+            <a href="#page-3" class="btn">
+                <i class="fas fa-chevron-down fa-2x"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Page 3 -->
+    <section id="page-3" class="page">
+        <h2>House Lannister</h2>
+        <span><q>Hear Me Roar!</q></span>
+        <p>Rulers of the Westerlands from the castle of Casterly Rock. The former royal house of the Seven Kingdoms after the destruction of the Great Sept of Baelor until the Battle of King's Landing. Its leadership was disputed by Queen Cersei I Lannister and Hand of the Queen to Daenerys Targaryen, Lord Tyrion Lannister, who became the head of House Lannister after the Battle of King's Landing.</p>
+        <div>
+            <a href="#page-2" class="btn btn-light">
+                <i class="fas fa-chevron-up fa-2x"></i>
+            </a>
+            <a href="#page-4" class="btn">
+                <i class="fas fa-chevron-down fa-2x"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Page 4 -->
+    <section id="page-4" class="page">
+        <h2>House Baratheon</h2>
+        <span><q>Ours is the Fury</q></span>
+        <p>Rulers of the Stormlands from the castle of Storm's End. The former royal house of the Seven Kingdoms after Robert's Rebellion. The bloodline went extinct after Stannis Baratheon was killed at the Battle of Winterfell. Legally went extinct when King Tommen Baratheon killed himself in King's Landing after the destruction of the Great Sept of Baelor. Restored when Queen Daenerys Targaryen legitimized Robert's unacknowledged bastard son Gendry Baratheon.</p>
+        <div>
+            <a href="#page-3" class="btn btn-light">
+                <i class="fas fa-chevron-up fa-2x"></i>
+            </a>
+            <a href="#page-1" class="btn">
+                <i class="fas fa-undo fa-2x"></i>
+            </a>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    
+    <script>
+        // Smooth scrolling
+        $('#navbar a, .btn').on('click', function(e) {
+            if (this.hash !== '') {
+                e.preventDefault();
+                const hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top,
+                }, 800);
+            }
+        });
+    </script>
+</body>
+</html>
