@@ -214,6 +214,7 @@ a {
 /* Features */
 #features .feature-box {
     height: 100vh;
+    padding: 2rem;
 }
 
 #features #feature-1 {
@@ -257,7 +258,7 @@ a {
     margin-bottom: 1.2rem;
 }
 
-#contact-form .form-group:nth-child(4) {
+#contact-form .form-group:nth-of-type(4) {
     margin: 0;
 }
 
@@ -267,6 +268,7 @@ a {
     border-radius: 5px;
     margin-top: 0.2rem;
     padding: 0.6rem;
+    font-family: inherit;
 }
 
 #contact-form input:focus,
